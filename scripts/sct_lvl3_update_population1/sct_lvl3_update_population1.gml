@@ -1,17 +1,18 @@
 evaporationrate=-0.3;
-retentionrateP2=0.0045;
-feedingrateP2=0.15;
-maxretentionrateP2=0.16;
-retentionrateP3=0.00028;
-feedingrateP3=0.015;
-maxretentionrateP3=0.16;
-rainfall=50;
-rainfallodds=50;
+retentionrateP2=0.005//0.0045;
+feedingrateP2=-0.0002//-0.0005//-0.15;
+maxretentionrateP2=0.17;
+retentionrateP3=0.0003//0.00028;
+feedingrateP3=-0.00001//-0.00003//-0.015;
+maxretentionrateP3=0.17;
+rainfall=20;
+rainfallodds=1;
 
 for (i=0;i<global.gridWidth;i++){
 	for(j=0;j<global.gridHeight;j++){
 		if (population1[i,j]>-1){
-			diff=global.population1[i,j]*(evaporationrate+min(retentionrateP2*global.population2[i,j],maxretentionrateP2)+min(retentionrateP3*global.population3[i,j],maxretentionrateP3))-feedingrateP2*global.population2[i,j]-feedingrateP3*global.population3[i,j];
+			//diff=global.population1[i,j]*(evaporationrate+min(retentionrateP2*global.population2[i,j],maxretentionrateP2)+min(retentionrateP3*global.population3[i,j],maxretentionrateP3))+feedingrateP2*global.population2[i,j]+feedingrateP3*global.population3[i,j];
+			diff=global.population1[i,j]*(evaporationrate+min(retentionrateP2*global.population2[i,j],maxretentionrateP2)+min(retentionrateP3*global.population3[i,j],maxretentionrateP3)+feedingrateP2*global.population2[i,j]+feedingrateP3*global.population3[i,j]);
 			if random(rainfallodds)<1{
 				diff=diff+rainfall;
 			}
@@ -19,7 +20,8 @@ for (i=0;i<global.gridWidth;i++){
 				diff=ceil(diff);
 			}
 			if(diff<0){
-				diff=floor(diff);
+				//diff=floor(diff);
+				diff=ceil(diff);
 			}
 			population1[i,j]=max(global.population1[i,j]+diff,0);
 		}

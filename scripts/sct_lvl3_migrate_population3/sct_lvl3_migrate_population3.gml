@@ -1,6 +1,6 @@
 dispersionrate=0.02;
 growthrate=-0.03;
-wateringrateP1=0.0001;
+wateringrateP1=0.0002;
 maxwateringrateP1=0.05;
 
 for (i=0;i<global.gridWidth;i++){
@@ -14,7 +14,12 @@ for (i=0;i<global.gridWidth;i++){
 				for (n=max(j-1,0);n<min(j+2,global.gridHeight);n++){
 					if(population3[m,n]>-1){
 						arrivals=max(movers/destinations*(growthrate+min(global.population1[m,n]*wateringrateP1,maxwateringrateP1)),0);
-						population3[m,n]=population3[m,n]+ceil(arrivals);
+						arrivals=arrivals*(1-global.population3[m,n]/carryingcapacity);
+						//if population3[m,n]>10{
+						//	population3[m,n]=population3[m,n]+floor(arrivals);
+						//}else{
+							population3[m,n]=population3[m,n]+ceil(arrivals);
+						//}
 					}
 				}
 			}

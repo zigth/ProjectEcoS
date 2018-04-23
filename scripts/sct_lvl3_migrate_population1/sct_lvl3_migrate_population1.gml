@@ -1,4 +1,4 @@
-dispersionrate=0.2
+dispersionrate=0.05;
 
 for (i=0;i<global.gridWidth;i++){
 	for(j=0;j<global.gridHeight;j++){

@@ -1,10 +1,11 @@
+migrationrate=0.1;
 migrationthresholdP2=40;
 migrationthresholdP3=200;
 
 for (i=0;i<global.gridWidth;i++){
 	for(j=0;j<global.gridHeight;j++){
 		if (global.population4[i,j]>0){	
-			movers=ceil(global.population4[i,j]*(1/2*max(1-global.population2[i,j]/migrationthresholdP2,0)+1/2*max(1-global.population3[i,j]/migrationthresholdP3,0)));
+			movers=ceil(global.population4[i,j]*max(1/2*max(1-global.population2[i,j]/migrationthresholdP2,0)+1/2*max(1-global.population3[i,j]/migrationthresholdP3,0),migrationrate));
 			
 			destinations=9;
 			if ((i==0)or(i==global.gridWidth-1))or((j==0)or(j==global.gridHeight-1)){
@@ -30,7 +31,7 @@ for (i=0;i<global.gridWidth;i++){
 				}
 			}
 	
-			population4[i,j]=population4[i,j]-movers;
+			population4[i,j]=population4[i,j]-destinations*floor(movers/destinations);
 		}
 	}	
 }

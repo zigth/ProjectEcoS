@@ -107,7 +107,7 @@ for (i=0;i<global.gridWidth;i++){
 //global.population2=population2;
 for (i=0;i<global.gridWidth;i++){
 	for(j=0;j<global.gridHeight;j++){
-		global.population2[i,j]=population2[i,j];
+		global.population2[i,j]=ceil(population2[i,j]); //ceil is necessary because migration function
 	}
 }
 //global.population3=population3;

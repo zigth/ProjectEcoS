@@ -15,7 +15,14 @@ for (i=0;i<global.gridWidth;i++){
 					if(population2[m,n]>-1){
 						//global.population2seeds[m,n]=global.population2seeds[m,n]+movers/destinations;
 						arrivals=max(movers/destinations*(growthrate+min(global.population1[m,n]*wateringrateP1,maxwateringrateP1)),0);
-						population2[m,n]=population2[m,n]+ceil(arrivals);
+						arrivals=arrivals*(1-global.population2[m,n]/carryingcapacity);
+						
+						/*if population2[m,n]>1{
+							population2[m,n]=population2[m,n]+floor(arrivals);
+						}else{
+							population2[m,n]=population2[m,n]+ceil(arrivals);
+						}*/
+						population2[m,n]=population2[m,n]+arrivals;
 					}
 				}
 			}
