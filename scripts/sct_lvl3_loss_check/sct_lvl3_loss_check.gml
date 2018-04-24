@@ -1,6 +1,6 @@
 loss = false;
 
-/*
+
 if (global.totalPopulation1>global.population1Threshold){
 	loss=true;
 }		
@@ -13,14 +13,30 @@ if (global.totalPopulation2>global.population2Threshold){
 	loss=true;
 }
 
+if (global.totalPopulation2<=0){
+	loss=true;
+}
+
+if (global.totalPopulation3>global.population3Threshold){
+	loss=true;
+}
+
 if (global.totalPopulation3<=0){
 	loss=true;
 }
-*/
 
-if (global.population1Reserve<1){
+if (global.totalPopulation4>global.population4Threshold){
 	loss=true;
 }
+
+if (global.totalPopulation4<=0){
+	loss=true;
+}
+
+
+/*if (global.population1Reserve<1){
+	loss=true;
+}*/
 
 
 if loss {

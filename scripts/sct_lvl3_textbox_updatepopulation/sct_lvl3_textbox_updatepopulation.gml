@@ -3,11 +3,11 @@ if(string_digits(text)==text){
 			case 1:
 				if(global.population1[gridvaluex,gridvaluey]>-1){
 					
-					if(real(text)<global.population1Threshold and (real(text)>=global.population1[gridvaluex,gridvaluey]) and (real(text)-global.population1[gridvaluex,gridvaluey]<=global.population1Reserve)){
+					if(real(text)<global.population1Threshold and (real(text)>=global.population1[gridvaluex,gridvaluey])){// and (real(text)-global.population1[gridvaluex,gridvaluey]<=global.population1Reserve)){
 						global.totalPopulation1+=floor(real(text))-global.population1[gridvaluex,gridvaluey];
+						global.population1Reserve-=real(text)-global.population1[gridvaluex,gridvaluey];
 						global.population1[gridvaluex,gridvaluey]=floor(real(text));
 						text=string(global.population1[gridvaluex,gridvaluey]);
-						global.population1Reserve-=real(text)-global.population1[gridvaluex,gridvaluey];
 					}else{
 						text="Invalid input";
 						alarm[2]=20;

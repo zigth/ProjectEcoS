@@ -1,5 +1,7 @@
 updated=false;
 
+
+
 if global.totalPopulation1>global.population1Maximum{
 	global.population1Maximum=global.totalPopulation1;
 	updated=true;
@@ -24,6 +26,15 @@ if global.totalPopulation3>global.population3Maximum{
 }
 if global.totalPopulation3<global.population3Minimum{
 	global.population3Minimum=global.totalPopulation3;
+	updated=true;
+}
+
+if global.totalPopulation4>global.population4Maximum{
+	global.population4Maximum=global.totalPopulation4;
+	updated=true;
+}
+if global.totalPopulation4<global.population4Minimum{
+	global.population4Minimum=global.totalPopulation4;
 	updated=true;
 }
 

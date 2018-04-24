@@ -2,7 +2,7 @@ global.populationNumber=4;
 
 global.representationratio=10;
 
-global.population1Reserve=100000;
+global.population1Reserve=6000000;
 global.population1DefaultReserve=100000;
 global.population1VisualThreshold=1000;
 global.population1LocalThreshold=10000;
@@ -26,7 +26,7 @@ script_execute(sct_lvl3_initialize_population2)
 
 
 global.population3VisualThreshold=1000;
-global.population3LocalThreshold=10000;
+global.population3LocalThreshold=5000;
 global.population3Threshold=global.population3LocalThreshold*global.gridWidth*global.gridHeight;
 global.population3Maximum=0;
 global.population3Minimum=global.population3Threshold;

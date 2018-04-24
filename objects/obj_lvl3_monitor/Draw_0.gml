@@ -9,4 +9,4 @@ draw_text(30,25,global.checktext2);
 draw_text(30,40,global.checktext3);
 draw_text(30,55,global.checktext4);
 
-draw_text(30,80,global.population1Reserve);
+draw_text(50,80,global.population1Reserve);

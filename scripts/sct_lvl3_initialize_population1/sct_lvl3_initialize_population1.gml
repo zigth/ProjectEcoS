@@ -7,8 +7,8 @@ for (i=0;i<global.gridWidth;i++){
 
 for (i=0;i<global.gridWidth;i++){
 	for(j=0;j<global.gridHeight;j++){
-		if i+j<200 {
-			global.population1[i,j]=1000;
+		if i+j<20 {
+			global.population1[i,j]=600;
 		}	
 	}	
 }

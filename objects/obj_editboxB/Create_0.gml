@@ -17,7 +17,7 @@ for(i=0;i<global.populationNumber;i++){
 
 textHeight=stringMaxHeight; //sprite_get_height(spr_plusbutton)+sprite_get_height(spr_minusbutton)+2;
 selfWidth=stringWidths+global.populationNumber*(10/*20+sprite_get_width(spr_plusbutton)*/)+20;//+sprite_get_width(spr_closebutton)+30;
-selfHeight=sprite_get_height(spr_editboxB_bars)+30+textHeight+sprite_get_height(spr_plusbutton); //+20+textHeight;
+selfHeight=sprite_get_height(spr_editboxB_bars)+20+textHeight+sprite_get_height(spr_plusbutton); //+20+textHeight;
 
 currentClosebutton = instance_create_depth(x+selfWidth-sprite_get_width(spr_closebutton)-10,y+10,-2,obj_closebutton);
 //gridupdated=false;

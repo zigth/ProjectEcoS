@@ -1,0 +1,7 @@
+global.lastWinCheckUpdate=global.timeElapsed;
+global.population1Maximum=global.totalPopulation1;
+global.population1Minimum=global.totalPopulation1;
+global.population2Maximum=global.totalPopulation2;
+global.population2Minimum=global.totalPopulation2;
+global.population3Maximum=global.totalPopulation3;
+global.population3Minimum=global.totalPopulation3;

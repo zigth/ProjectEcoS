@@ -2,7 +2,7 @@
 
 
 
-global.gridPointSize=sprite_get_width(spr_gridpoint);
+global.gridPointSize=sprite_get_width(spr_gridpoint1);
 
 global.gridWidth=room_width/global.gridPointSize;
 global.gridHeight=room_height/global.gridPointSize;

@@ -14,6 +14,9 @@ draw_set_valign(fa_middle);
 stringWidths=0;
 for(i=0;i<global.populationNumber;i++){
 	draw_text(x+stringWidths+string_width(global.populationNames[i])/2+i*(10/*20+sprite_get_width(spr_plusbutton)*/)+20,y+selfHeight-5-textHeight/2-sprite_get_height(spr_plusbutton),global.populationNames[i]);
+	if i>0 {
+		draw_sprite_ext(spr_seperator,image_index,x+stringWidths+i*10+14,y+selfHeight-5-textHeight-sprite_get_height(spr_plusbutton),1,(textHeight+sprite_get_height(spr_plusbutton)+2)/sprite_get_height(spr_seperator),0,c_white,1);
+	}
 	
 	script_execute(sctDraw);
 	
