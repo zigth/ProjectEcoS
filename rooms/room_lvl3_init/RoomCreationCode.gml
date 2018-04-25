@@ -9,6 +9,13 @@ global.gridHeight=room_height/global.gridPointSize;
 
 global.gridpointids[global.gridWidth-1,global.gridHeight-1]=0;
 
+global.gridpointIsUpdated[global.gridWidth-1,global.gridHeight-1]=false;
+for (i=0;i<global.gridWidth;i++){
+	for(j=0;j<global.gridHeight;j++){
+		global.gridpointIsUpdated[i,j]=true;
+	}
+}
+
 global.timeflow=false;
 global.timeflowrate=20;
 

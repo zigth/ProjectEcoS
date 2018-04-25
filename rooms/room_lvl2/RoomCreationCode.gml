@@ -8,7 +8,13 @@ for (i=0;i<global.gridWidth;i++){
 	}	
 }
 
-//layer_tilemap_create(layer_get_id("Tiles_1"),0,0,tileset_lvl2,64,64);
+/*//trylayer=layer_tilemap_create(layer_create(1,"triedlayer"),0,0,tileset_lvl2_island,12,9);
+trylayer=layer_tilemap_get_id("tiles_island");
+data=spr_tile_water //tilemap_get(trylayer,9,10);
+tilemap_set(trylayer,data,15,15);
+//draw_tilemap(trylayer,0,0);*/
+
+
 
 instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl2_intro);
 

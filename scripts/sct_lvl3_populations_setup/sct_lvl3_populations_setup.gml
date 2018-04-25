@@ -63,3 +63,6 @@ for (i=0;i<global.gridWidth;i++){
 		global.totalPopulation4+=max(global.population4[i,j],0);		
 	}	
 }
+
+global.gridpointIsSand[global.gridWidth-1,global.gridHeight-1]=false;
+script_execute(sct_lvl3_tile_setup);

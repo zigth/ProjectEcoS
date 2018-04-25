@@ -3,7 +3,7 @@
 if global.timeflow{
 	script_execute(sctUpdatepopulation);
 	alarm[0]=global.timeflowrate;
-	if (global.timeflowrate>1){
+	if (global.timeflowrate>3){
 		global.timeflowrate--;
 	}
 }

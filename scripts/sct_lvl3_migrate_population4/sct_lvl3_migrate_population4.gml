@@ -22,6 +22,7 @@ for (i=0;i<global.gridWidth;i++){
 				for (n=max(j-1,0);n<min(j+2,global.gridHeight);n++){
 					if(population4[m,n]<0){
 						destinations--;
+						preferredDestinations--;
 					}else{
 						if (global.population2[m,n]==0 or global.population3[m,n]==0){
 							preferredDestinations--;

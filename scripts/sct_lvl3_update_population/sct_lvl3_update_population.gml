@@ -141,6 +141,7 @@ for (i=0;i<global.gridWidth;i++){
 script_execute(sct_lvl3_loss_check);
 script_execute(sct_lvl3_win_check);
 
+script_execute(sct_lvl3_tile_update);
 
 global.timeElapsed++;
 

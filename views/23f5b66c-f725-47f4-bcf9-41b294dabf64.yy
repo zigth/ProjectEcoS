@@ -10,7 +10,8 @@
         "b9a77da6-5704-4835-80ba-16d85a443afa",
         "3b17bc7f-e230-4038-959c-76171f8565e6",
         "87ce1d36-c74f-4a64-9e55-0719d596c374",
-        "b78c65b1-d34d-4a57-ae8d-972dde9754f1"
+        "b78c65b1-d34d-4a57-ae8d-972dde9754f1",
+        "b18fdef4-4bb2-436d-862a-393debdec257"
     ],
     "filterType": "GMSprite",
     "folderName": "Dots",

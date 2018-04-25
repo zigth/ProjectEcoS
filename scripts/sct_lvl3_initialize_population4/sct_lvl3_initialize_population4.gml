@@ -12,3 +12,10 @@ for (i=0;i<global.gridWidth;i++){
 	}	
 }
 
+for (i=0;i<6;i++){
+	for(j=20;j<global.gridHeight;j++){
+		global.population4[i,j]=-1;	
+	}	
+}
+
+
