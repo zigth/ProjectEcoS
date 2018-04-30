@@ -1,4 +1,15 @@
 if(!gridupdated and (gridvaluex!=-1 or gridvaluey!=-1)){
+	for(i=0;i<global.reservesNumber;i++){
+		currentReservesTextboxIds[i].gridvaluex=gridvaluex;
+		currentReservesTextboxIds[i].gridvaluey=gridvaluey;
+		currentReservesTextboxIds[i].text=""; 
+		switch (currentReservesTextboxIds[i].population) {
+			case -1:				
+				currentReservesTextboxIds[i].text=string(global.population1Reserve);
+				break;
+		}
+	}
+	
 	for(i=0;i<global.populationNumber;i++){
 		currentTextboxIds[i].gridvaluex=gridvaluex;
 		currentTextboxIds[i].gridvaluey=gridvaluey;
@@ -35,7 +46,6 @@ if(!gridupdated and (gridvaluex!=-1 or gridvaluey!=-1)){
 			default:
 				currentTextboxIds[i].text="error no connected value";
 		}
-	
 	}
 	
 	if (global.population1[gridvaluex,gridvaluey]<0){

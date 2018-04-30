@@ -1,4 +1,5 @@
 global.populationNumber=3;
+global.reservesNumber=0;
 
 global.representationratio=10;
 
@@ -37,6 +38,10 @@ global.populationNames[global.populationNumber-1]="";
 global.populationNames[0]="Rabbits";
 global.populationNames[1]="Wolves";
 global.populationNames[2]="Plants";
+
+if global.reservesNumber>0{
+	global.reservesNames[global.reservesNumber-1]="";
+}
 
 global.totalPopulation1=0;
 global.totalPopulation2=0;

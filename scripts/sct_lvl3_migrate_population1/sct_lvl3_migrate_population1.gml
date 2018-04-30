@@ -8,9 +8,11 @@ for (i=0;i<global.gridWidth;i++){
 			destinations=9;
 			if ((i==0)or(i==global.gridWidth-1))or((j==0)or(j==global.gridHeight-1)){
 				destinations=6;
+				movers=(6/9*movers);
 			}
 			if ((i==0)or(i==global.gridWidth-1))and((j==0)or(j==global.gridHeight-1)){
 				destinations=4;
+				movers=(4/9*movers);
 			}
 			
 			for (m=max(i-1,0);m<min(i+2,global.gridWidth);m++){

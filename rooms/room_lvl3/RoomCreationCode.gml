@@ -35,8 +35,8 @@ global.tileSandSSDR=tilemap_get(global.layerSand,3,9);
 
 
 global.tileEmpty=tilemap_get(global.layerSand,0,0);
-for (i=0;i<7;i++){
-	for(j=0;j<9;j++){
+for (i=0;i<8;i++){
+	for(j=0;j<10;j++){
 		tilemap_set(global.layerSand,global.tileEmpty,i,j);
 	}
 }

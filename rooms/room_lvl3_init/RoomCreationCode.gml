@@ -26,14 +26,16 @@ global.winCounter=300;
 
 
 script_execute(sct_lvl3_populations_setup);
-//script_execute(sct_lvl3_background_setup);
-global.checktext="";
+
+/*global.checktext="";
 global.checktext2="";
 global.checktext3="";
 global.checktext4="";
 global.tempvar=0;
 global.tempvar2=0;
 global.tempvar3=0;
-global.tempvar4=0;
+global.tempvar4=0;*/
+
+global.editboxChoice=true;
 
 room_goto(room_lvl3);

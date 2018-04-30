@@ -21,4 +21,6 @@ global.winCounter=300;
 script_execute(sct_lvl1_populations_setup);
 script_execute(sct_lvl1_background_setup);
 
+global.editboxChoice=false;
+
 room_goto(room_lvl1);

@@ -22,7 +22,7 @@ for (i=0;i<global.gridWidth;i++){
 						}else{
 							population2[m,n]=population2[m,n]+ceil(arrivals);
 						}*/
-						population2[m,n]=population2[m,n]+arrivals;
+						population2[m,n]=population2[m,n]+ceil(arrivals);
 					}
 				}
 			}

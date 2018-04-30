@@ -5,7 +5,7 @@ migrationthresholdP3=200;
 for (i=0;i<global.gridWidth;i++){
 	for(j=0;j<global.gridHeight;j++){
 		if (global.population4[i,j]>0){	
-			movers=ceil(global.population4[i,j]*max(1/2*max(1-global.population2[i,j]/migrationthresholdP2,0)+1/2*max(1-global.population3[i,j]/migrationthresholdP3,0),migrationrate));
+			movers=(global.population4[i,j]*max(1/2*max(1-global.population2[i,j]/migrationthresholdP2,0)+1/2*max(1-global.population3[i,j]/migrationthresholdP3,0),migrationrate));
 			
 			destinations=9;
 			preferredDestinations=9;

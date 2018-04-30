@@ -1,4 +1,7 @@
 switch (population) {
+		case -1:
+			text=string(global.population1Reserve);
+			break;
 		case 1:
 			text=string(global.population1[gridvaluex,gridvaluey]);
 			break;

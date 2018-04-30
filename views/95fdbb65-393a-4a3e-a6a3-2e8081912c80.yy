@@ -7,7 +7,8 @@
         "219d21dc-9d8c-402c-b029-7b046250598d",
         "074f7eea-7776-4e31-a124-3079a73cf891",
         "94f0b9ef-39fd-4646-bf21-856c3837501c",
-        "853a273a-5e1b-40d6-9aef-1efa3527c52e"
+        "853a273a-5e1b-40d6-9aef-1efa3527c52e",
+        "0bd4693e-0066-47fc-9385-e99a18325028"
     ],
     "filterType": "GMScript",
     "folderName": "Gridpoint_Setup",

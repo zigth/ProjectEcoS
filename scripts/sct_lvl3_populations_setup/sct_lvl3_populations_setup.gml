@@ -1,9 +1,10 @@
 global.populationNumber=4;
+global.reservesNumber=1;
 
 global.representationratio=10;
 
 global.population1Reserve=6000000;
-global.population1DefaultReserve=100000;
+global.population1DefaultReserve=global.population1Reserve;
 global.population1VisualThreshold=1000;
 global.population1LocalThreshold=10000;
 global.population1Threshold=global.population1LocalThreshold*global.gridWidth*global.gridHeight;
@@ -49,7 +50,13 @@ global.populationNames[global.populationNumber-1]="";
 global.populationNames[0]="Water";
 global.populationNames[1]="Trees";
 global.populationNames[2]="Plants";
-global.populationNames[3]="Animals"
+global.populationNames[3]="Animals";
+
+if global.reservesNumber>0{
+	global.reservesNames[global.reservesNumber-1]="";
+}
+
+global.reservesNames[0]="Water Reserve";
 
 global.totalPopulation1=0;
 global.totalPopulation2=0;

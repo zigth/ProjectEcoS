@@ -50,6 +50,8 @@ if (!timebuttonSelected and !editboxSelected and !editboxBSelected and !messageS
 	instance_destroy(obj_editboxB);
 	if ((x/room_width)<(1/2)){
 		currentEditbox = instance_create_depth(room_width-usedEditboxWidth-10,10,-1,usedEditbox);
+		//currentEditbox = instance_create_depth(room_width-10,10,-1,usedEditbox);
+		//currentEditbox.x = currentEditbox.x-currentEditbox.selfWidth;
 	}else{
 		currentEditbox = instance_create_depth(10,10,-1,usedEditbox);
 	}
