@@ -33,19 +33,20 @@ if(instance_exists(obj_editboxB)){
 	}
 }
 
-messageSelected=false;
+messageExists=false;
 
-if(instance_exists(obj_intro)){
-	message=instance_find(obj_message,0);
-	if((abs(mouse_x-message.x-sprite_get_width(spr_message)/2)<=sprite_get_width(spr_message)/2) and (abs(mouse_y-message.y-sprite_get_height(spr_message)/2)<=sprite_get_height(spr_message)/2)){
+if(instance_exists(obj_message)){
+	//message=instance_find(obj_message,0);
+	messageExists=true;
+	/*if((abs(mouse_x-message.x-sprite_get_width(spr_message)/2)<=sprite_get_width(spr_message)/2) and (abs(mouse_y-message.y-sprite_get_height(spr_message)/2)<=sprite_get_height(spr_message)/2)){
 		messageSelected=true;
 	}else{
 		messageSelected=false;
-	}
+	}*/
 }
 
 
-if (!timebuttonSelected and !editboxSelected and !editboxBSelected and !messageSelected and validity){
+if (!timebuttonSelected and !editboxSelected and !editboxBSelected and !messageExists and validity){
 	instance_destroy(obj_editbox);
 	instance_destroy(obj_editboxB);
 	if ((x/room_width)<(1/2)){

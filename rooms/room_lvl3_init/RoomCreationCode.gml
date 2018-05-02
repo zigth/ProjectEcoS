@@ -36,6 +36,6 @@ global.tempvar2=0;
 global.tempvar3=0;
 global.tempvar4=0;*/
 
-global.editboxChoice=true;
+//global.editboxChoice=true;
 
 room_goto(room_lvl3);
