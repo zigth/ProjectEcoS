@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if tutorial.tutorialstate>=3{
+if tutorial.tutorialstate>=maxSlideNumber{
 	draw_set_alpha(0.1);
 }
 

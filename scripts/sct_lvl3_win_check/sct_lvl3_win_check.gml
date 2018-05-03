@@ -44,9 +44,17 @@ if updated {
 }
 
 if ((global.timeElapsed-global.lastWinCheckUpdate)>global.winCounter){
-	//show_message("You Win \n \nThis ecosystem will now be safe, if left alone.");
-	//room_goto(room_lvl3_init);
-	instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl3_win);
-	global.timeflow=false;
-	global.lastWinCheckUpdate=global.timeElapsed;
+	desertcounter=0;
+	for (i=0;i<global.gridWidth;i++){
+		for(j=0;j<global.gridHeight;j++){
+			if global.gridpointIsSand[i,j]{
+				desertcounter+=1;	
+			}
+		}	
+	}
+	if desertcounter<5{
+		instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl3_win);
+		global.timeflow=false;
+		global.lastWinCheckUpdate=global.timeElapsed;
+	}	
 }

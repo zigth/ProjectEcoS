@@ -19,7 +19,7 @@ for (i=0;i<global.populationNumber;i++){
 	currentTextboxIds[i].population=i+1;
 }
 
-currentClosebutton = instance_create_depth(x+sprite_get_width(spr_editbox)-sprite_get_width(spr_closebutton)-5,y+10,-2,obj_closebutton);
+currentClosebutton = instance_create_depth(x+sprite_get_width(spr_editbox)-sprite_get_width(spr_closebutton)-5,y+5,-2,obj_closebutton);
 gridupdated=false;
 presscheck=true;
 

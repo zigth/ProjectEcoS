@@ -77,6 +77,7 @@ for (i=0;i<5;i++){
 	}
 }*/
 
+instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl3_intro);
 
 
 
