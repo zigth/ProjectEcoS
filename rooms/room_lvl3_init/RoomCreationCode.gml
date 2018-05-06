@@ -7,7 +7,7 @@ global.gridPointSize=sprite_get_width(spr_gridpoint1);
 global.gridWidth=room_width/global.gridPointSize;
 global.gridHeight=room_height/global.gridPointSize;
 
-global.gridpointids[global.gridWidth-1,global.gridHeight-1]=0;
+//global.gridpointids[global.gridWidth-1,global.gridHeight-1]=0;
 
 global.gridpointIsUpdated[global.gridWidth-1,global.gridHeight-1]=false;
 for (i=0;i<global.gridWidth;i++){

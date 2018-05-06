@@ -1,8 +1,7 @@
 /// @description Textbox_create_event
 delete_timer=2;
 maxWidth=28;
-initialText="";
-text=initialText;
+text="";
 selected=false;
 blink=false;
 clickable=true;
