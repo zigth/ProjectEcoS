@@ -1,6 +1,6 @@
 
 
-global.editboxChoice=true;
+global.editboxChoice=false;
 
-room_goto(room_lvl1_init);
+room_goto(room_lvl3_init);
 

@@ -5,7 +5,7 @@ if pluscheck {
 				if(global.population1[gridvaluex,gridvaluey]>-1 and 100*power(2,pluscounter)<=global.population1Reserve){
 					if(global.population1[gridvaluex,gridvaluey]+100*power(2,pluscounter)<global.population1LocalThreshold){
 						global.totalPopulation1+=100*power(2,pluscounter);
-						global.population1Reserve-=10000*power(2,pluscounter);
+						global.population1Reserve-=100*power(2,pluscounter);
 						global.population1[gridvaluex,gridvaluey]+=100*power(2,pluscounter);
 					}else{
 						global.totalPopulation1+=global.population1LocalThreshold-global.population1[gridvaluex,gridvaluey];
