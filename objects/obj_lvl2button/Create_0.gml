@@ -3,7 +3,4 @@
 
 event_inherited();
 
-if clickcheck {
-	room_goto(room_lvl1_init);
-}	
-	
+text="Level 2";

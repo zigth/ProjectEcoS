@@ -3,4 +3,6 @@
 
 event_inherited();
 
-room_goto(room_lvl3_init);
+if clickcheck {
+	room_goto(room_lvl3_init);
+}

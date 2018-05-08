@@ -2,5 +2,5 @@
 
 global.editboxChoice=false;
 
-room_goto(room_lvl3_init);
+room_goto(room_menu);
 
