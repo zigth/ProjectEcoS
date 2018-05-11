@@ -20,7 +20,7 @@ draw_set_valign(fa_middle);
 
 switch (tutorialstate) {
 	case 1:
-		draw_text(room_width/2,room_height/2,"Welcome to the tutorial, \nwhere this games controls will be explained. ");
+		draw_text(room_width/2,room_height/2,"Welcome to the tutorial, \nwhere this game's controls will be explained. ");
 		break;
 	case 2:
 		
@@ -79,7 +79,7 @@ switch (tutorialstate) {
 		draw_sprite(spr_closebutton,image_index,room_width-sprite_get_width(spr_closebutton)-15,15);		
 		draw_set_color(c_white);
 		
-		draw_text(room_width/2,room_height/2,"There exits a different version of the editor window, \nwhich shows the actual population numbers, and lets you modify them directly. \n\nYou can decide which version to use in the options menu.");
+		draw_text(room_width/2,room_height/2,"There exists a different version of the editor window, \nwhich shows the actual population numbers, and lets you modify them directly. \n\nYou can decide which version to use in the options menu.");
 		draw_sprite_ext(spr_arrow,image_index,830,155,0.2,0.2,-126.12,c_white,1);
 		draw_sprite_ext(spr_arrowline,image_index,695,340,1.6,0.2,-126.12,c_white,1);
 		draw_sprite_ext(spr_arrowline,image_index,695,340,0.2,0.2,-126.12,c_white,1);
