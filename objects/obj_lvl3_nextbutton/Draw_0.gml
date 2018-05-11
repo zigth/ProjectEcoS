@@ -1,3 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-alarm[0]=5;
+
+draw_self();
+
+draw_set_alpha(0.2);
+
+event_inherited();
+
+draw_set_alpha(1);

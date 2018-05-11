@@ -52,9 +52,12 @@ if ((global.timeElapsed-global.lastWinCheckUpdate)>global.winCounter){
 			}
 		}	
 	}
-	if desertcounter<5{
+	if desertcounter<(2*global.global.gridHeight+2*global.global.gridWidth){
 		instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl3_win);
 		global.timeflow=false;
 		global.lastWinCheckUpdate=global.timeElapsed;
 	}	
 }
+
+instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl3_win);
+global.timeflow=false;
