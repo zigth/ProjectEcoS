@@ -1,5 +1,14 @@
-/// @description Insert description here
-// You can write your code in this editor
+/*******************************************************************************
+ * Copyright (c) 2018 University of Luxembourg.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v20.html
+ * 
+ * Contributors:
+ *     Thierry Zigrand - initial code and implementation
+ *
+ ******************************************************************************/
 
 //script_execute(sct_gridpoint_validityTest);
 
@@ -14,7 +23,6 @@ editboxSelected=false;
 
 if(instance_exists(obj_editbox)){
 	editBox=instance_find(obj_editbox,0);
-	//if((abs(mouse_x-instance_find(obj_editbox,0).x-sprite_get_width(spr_editbox)/2)<=sprite_get_width(spr_editbox)/2) and (abs(mouse_y-instance_find(obj_editbox,0).y-sprite_get_height(spr_editbox)/2)<=sprite_get_height(spr_editbox)/2)){
 	if((abs(mouse_x-editBox.x-sprite_get_width(spr_editbox)/2)<=sprite_get_width(spr_editbox)/2) and (abs(mouse_y-editBox.y-editBox.selfHeight/2)<=editBox.selfHeight/2)){
 		editboxSelected=true;
 	}else{
@@ -36,13 +44,7 @@ if(instance_exists(obj_editboxB)){
 messageExists=false;
 
 if(instance_exists(obj_message)){
-	//message=instance_find(obj_message,0);
 	messageExists=true;
-	/*if((abs(mouse_x-message.x-sprite_get_width(spr_message)/2)<=sprite_get_width(spr_message)/2) and (abs(mouse_y-message.y-sprite_get_height(spr_message)/2)<=sprite_get_height(spr_message)/2)){
-		messageSelected=true;
-	}else{
-		messageSelected=false;
-	}*/
 }
 
 
@@ -51,8 +53,6 @@ if (!timebuttonSelected and !editboxSelected and !editboxBSelected and !messageE
 	instance_destroy(obj_editboxB);
 	if ((x/room_width)<(1/2)){
 		currentEditbox = instance_create_depth(room_width-usedEditboxWidth-10,10,-1,usedEditbox);
-		//currentEditbox = instance_create_depth(room_width-10,10,-1,usedEditbox);
-		//currentEditbox.x = currentEditbox.x-currentEditbox.selfWidth;
 	}else{
 		currentEditbox = instance_create_depth(10,10,-1,usedEditbox);
 	}

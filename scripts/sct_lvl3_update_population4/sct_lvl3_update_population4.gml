@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Copyright (c) 2018 University of Luxembourg.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v20.html
+ * 
+ * Contributors:
+ *     Thierry Zigrand - initial code and implementation
+ *
+ ******************************************************************************/
+ 
 growthrate=-0.02;
 competitionrateP1=-0.003;
 feedingrateP2=0.0002//0.00025;
@@ -20,17 +32,6 @@ for (i=0;i<global.gridWidth;i++){
 			
 			population4[i,j]=max(global.population4[i,j]+diff,0);
 			
-			
-			/*if(population2[i,j]<1 and population3[i,j]<1){
-				//growthrate=-0.2;
-				//population4[i,j]=-1;
-			}
-			
-		}else{
-			if (population2[i,j]>liveablethresholdP2 or population3[i,j]>liveablethresholdP3){
-				//growthrate=-0.02;
-				population4[i,j]=0;
-			}*/
 		}
 	}	
 }

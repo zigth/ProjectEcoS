@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Copyright (c) 2018 University of Luxembourg.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v20.html
+ * 
+ * Contributors:
+ *     Thierry Zigrand - initial code and implementation
+ *
+ ******************************************************************************/
+
 for (i=0;i<global.gridWidth;i++){
 	for(j=0;j<global.gridHeight;j++){
 		global.population3[i,j]=-1;
@@ -144,58 +156,4 @@ j=20;
 i=24;
 global.population3[i,j]=300;
 
-
-
-
-
-/*
-global.population3[8,10]=300;
-global.population3[8,11]=300;
-for(j=9;j<14;j++){
-	global.population3[9,j]=300;
-}
-global.population3[10,4]=300;
-global.population3[10,5]=300;
-for(j=8;j<21;j++){
-	global.population3[10,j]=300;
-}
-for(j=4;j<21;j++){
-	global.population3[11,j]=300;
-}
-for(j=4;j<22;j++){
-	global.population3[12,j]=300;
-}
-for(j=5;j<22;j++){
-	global.population3[13,j]=300;
-}
-for(j=5;j<20;j++){
-	global.population3[14,j]=300;
-}
-for(j=6;j<19;j++){
-	global.population3[15,j]=300;
-}
-for(j=6;j<18;j++){
-	global.population3[16,j]=300;
-}
-for(j=7;j<18;j++){
-	global.population3[17,j]=300;
-}
-for(j=7;j<17;j++){
-	global.population3[18,j]=300;
-}
-for(j=8;j<17;j++){
-	global.population3[19,j]=300;
-}
-for(j=9;j<17;j++){
-	global.population3[20,j]=300;
-}
-for(j=11;j<17;j++){
-	global.population3[21,j]=300;
-}
-for(j=12;j<16;j++){
-	global.population3[22,j]=300;
-}
-for(j=13;j<15;j++){
-	global.population3[23,j]=300;
-}*/
 

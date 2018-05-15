@@ -10,8 +10,7 @@
         "95fdbb65-393a-4a3e-a6a3-2e8081912c80",
         "1b5d1139-681a-42e3-8eb5-d36520bec782",
         "93ce4090-f9b1-4bbf-a35c-ca344c30f689",
-        "1deeae5f-cdb9-4808-9a12-b44f5697772e",
-        "9075d37d-7797-4ec6-a85d-0c0cf84ea1fe"
+        "1deeae5f-cdb9-4808-9a12-b44f5697772e"
     ],
     "filterType": "GMScript",
     "folderName": "Lvl_2",

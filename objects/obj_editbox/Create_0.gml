@@ -1,5 +1,15 @@
-/// @description Insert description here
-// You can write your code in this editor
+/*******************************************************************************
+ * Copyright (c) 2018 University of Luxembourg.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v20.html
+ * 
+ * Contributors:
+ *     Thierry Zigrand - initial code and implementation
+ *
+ ******************************************************************************/
+ 
 gridvaluex=-1;
 gridvaluey=-1;
 
@@ -23,14 +33,8 @@ currentClosebutton = instance_create_depth(x+sprite_get_width(spr_editbox)-sprit
 gridupdated=false;
 presscheck=true;
 
-/*stringHeights=0;
-for(i=0;i<global.populationNumber;i++){
-	stringHeights+=string_height(global.populationNames[i]);
-}*/
 selfHeight=(global.reservesNumber+global.populationNumber)*(sprite_get_height(spr_textbox)+10)+stringHeights+10;
-//selfWidth=sprite_width;
 
 
-//script_execute(sct_lvl1_editbox_create);
 
 

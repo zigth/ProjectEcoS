@@ -1,9 +1,18 @@
-/// @description Insert description here
-// You can write your code in this editor
+/*******************************************************************************
+ * Copyright (c) 2018 University of Luxembourg.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v20.html
+ * 
+ * Contributors:
+ *     Thierry Zigrand - initial code and implementation
+ *
+ ******************************************************************************/
 
 for (i=0;i<global.gridWidth;i++){
 	for(j=0;j<global.gridHeight;j++){
-		//value=global.backgroundtiles[i,j];
+		
 		switch (global.backgroundtiles[i,j]) {
 			case 0:
 				draw_sprite(spr_tile_water,image_index,(1/2+i)*global.gridPointSize,(1/2+j)*global.gridPointSize);

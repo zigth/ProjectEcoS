@@ -1,3 +1,15 @@
+/*******************************************************************************
+ * Copyright (c) 2018 University of Luxembourg.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v20.html
+ * 
+ * Contributors:
+ *     Thierry Zigrand - initial code and implementation
+ *
+ ******************************************************************************/
+
 updated=false;
 
 if global.totalPopulation1>global.population1Maximum{
@@ -33,8 +45,6 @@ if updated {
 }
 
 if ((global.timeElapsed-global.lastWinCheckUpdate)>global.winCounter){
-	//show_message("You Win \n \nThis ecosystem will now be safe, if left alone.");
-	//room_goto(room_lvl2_init);
 	instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl2_win);
 	global.timeflow=false;
 }

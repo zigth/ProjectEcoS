@@ -1103,14 +1103,6 @@
             }
         },
         {
-            "Key": "7ab8ba4e-2e89-46d5-9427-ec738d9d8d7c",
-            "Value": {
-                "id": "c6045c4d-5cb5-428e-bdc4-e49e96eb53ee",
-                "resourcePath": "objects\\obj_lvl2_background\\obj_lvl2_background.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7da97be9-b41c-4ef7-b6c6-49096dadbae2",
             "Value": {
                 "id": "4b0a8d22-9c85-4787-b557-92c3824b279a",
@@ -1259,14 +1251,6 @@
             "Value": {
                 "id": "4649e793-0cf7-43db-88ce-8c579bc5c545",
                 "resourcePath": "views\\8fc546df-2b94-4a75-a5a8-1059e96b34e5.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "9075d37d-7797-4ec6-a85d-0c0cf84ea1fe",
-            "Value": {
-                "id": "b53eae56-7bf9-43c0-b9f9-3a39111a7854",
-                "resourcePath": "views\\9075d37d-7797-4ec6-a85d-0c0cf84ea1fe.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2031,14 +2015,6 @@
             }
         },
         {
-            "Key": "d9198827-9165-4953-80f1-e15bb1c8a35d",
-            "Value": {
-                "id": "8d39ed70-0f58-4215-bc10-b2f6c1e08867",
-                "resourcePath": "scripts\\sct_lvl2_background_setup\\sct_lvl2_background_setup.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "d9455df0-ccdc-4b85-b4ff-94882b601ea3",
             "Value": {
                 "id": "f821425e-8d2f-447c-be4f-80a1fa0b3d4c",
@@ -2516,7 +2492,6 @@
         "3a72e86d-4d15-4866-9e96-00932db09850",
         "296637db-4949-4534-b149-7305e72ab3ba",
         "285e7575-b72a-427d-a03d-1d9d0c676096",
-        "d9198827-9165-4953-80f1-e15bb1c8a35d",
         "9408365c-0c2d-4b96-ac2c-fc7e5bcb11c8",
         "bb80ce84-a84b-43b9-9794-b6fb87d8cb7e",
         "10b550fc-abfc-4c39-8604-af2a3777ff56",
