@@ -70,5 +70,4 @@ if ((global.timeElapsed-global.lastWinCheckUpdate)>global.winCounter){
 	}	
 }
 
-instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl3_win);
-global.timeflow=false;
+

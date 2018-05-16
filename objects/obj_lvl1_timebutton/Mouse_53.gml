@@ -13,3 +13,4 @@
 sctWincheckReset=sct_lvl1_timebutton_wincheckReset;
 
 event_inherited();
+
