@@ -83,4 +83,15 @@ for (i=0;i<global.gridWidth;i++){
 }
 
 global.gridpointIsSand[global.gridWidth-1,global.gridHeight-1]=false;
+global.desertCounter=0;
+global.desertMaximum=0;
+global.desertMinimum=global.gridWidth*global.gridHeight;
 script_execute(sct_lvl3_tile_setup);
+
+for (i=0;i<global.gridWidth;i++){
+	for(j=0;j<global.gridHeight;j++){
+		if global.gridpointIsSand[i,j]{
+			global.desertCounter+=1;	
+		}
+	}	
+}

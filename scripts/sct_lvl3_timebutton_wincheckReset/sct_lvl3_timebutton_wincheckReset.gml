@@ -19,4 +19,7 @@ global.population3Maximum=global.totalPopulation3;
 global.population3Minimum=global.totalPopulation3;
 global.population4Maximum=global.totalPopulation4;
 global.population4Minimum=global.totalPopulation4;
+global.desertMaximum=global.desertCounter;
+global.desertMinimum=global.desertCounter;
+
 

@@ -48,26 +48,23 @@ if global.totalPopulation4<global.population4Minimum{
 	global.population4Minimum=global.totalPopulation4;
 	updated=true;
 }
-
+if global.desertCounter>global.desertMaximum{
+	global.desertMaximum=global.desertCounter;
+	updated=true;
+}
+if global.desertCounter<global.desertMinimum{
+	global.desertMinimum=global.desertCounter;
+	updated=true;
+}
 
 if updated {
 	global.lastWinCheckUpdate=global.timeElapsed;
 }
 
 if ((global.timeElapsed-global.lastWinCheckUpdate)>global.winCounter){
-	desertcounter=0;
-	for (i=0;i<global.gridWidth;i++){
-		for(j=0;j<global.gridHeight;j++){
-			if global.gridpointIsSand[i,j]{
-				desertcounter+=1;	
-			}
-		}	
-	}
-	if desertcounter<(2*global.global.gridHeight+2*global.global.gridWidth){
-		instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl3_win);
-		global.timeflow=false;
-		global.lastWinCheckUpdate=global.timeElapsed;
-	}	
+	instance_create_depth((room_width-sprite_get_width(spr_message))/2,100,-1,obj_lvl3_win);
+	global.timeflow=false;
+	global.lastWinCheckUpdate=global.timeElapsed;
 }
 
 
