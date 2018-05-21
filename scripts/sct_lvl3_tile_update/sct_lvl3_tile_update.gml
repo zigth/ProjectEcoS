@@ -18,7 +18,7 @@ for (i=0;i<global.gridWidth;i++){
 		if global.gridpointIsSand[i,j]{
 			if (global.population2[i,j]>liveablethresholdP2 and global.population3[i,j]>liveablethresholdP3){
 				global.gridpointIsSand[i,j]=false;
-				global.global.desertCounter-=1;
+				global.desertCounter-=1;
 				global.gridpointIsUpdated[i,j]=true;
 				for (m=max(i-1,0);m<min(i+2,global.gridWidth);m++){
 					for (n=max(j-1,0);n<min(j+2,global.gridHeight);n++){
@@ -29,7 +29,7 @@ for (i=0;i<global.gridWidth;i++){
 		}else{	
 			if (global.population2[i,j]<liveablethresholdP2 or global.population3[i,j]<liveablethresholdP3){
 				global.gridpointIsSand[i,j]=true;
-				global.global.desertCounter+=1;
+				global.desertCounter+=1;
 				global.gridpointIsUpdated[i,j]=true;
 				for (m=max(i-1,0);m<min(i+2,global.gridWidth);m++){
 					for (n=max(j-1,0);n<min(j+2,global.gridHeight);n++){

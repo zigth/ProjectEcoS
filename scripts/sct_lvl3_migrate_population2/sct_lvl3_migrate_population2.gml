@@ -14,6 +14,7 @@ dispersionrate=0.015;
 growthrate=-0.02;
 wateringrateP1=0.00005;
 maxwateringrateP1=0.03;
+carryingcapacity=300;
 
 for (i=0;i<global.gridWidth;i++){
 	for(j=0;j<global.gridHeight;j++){
